@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-300 p-5">
+    <div class="container ">
+        <h1>CRUD CON AXIOS</h1>
+    <form id="crudForm" class="bg-white p-6 rounded-md" >
+        <div class="mb-4">
+            <label for="name" class="block text-green-700">Nombre</label>
+            <input type="text"id="name" class="border border-gray-300 p-2 rounded w-full ">
+        </div>
+        <div class="mb-4">
+            <label for="lasName" class="block text-green-700">Last Name</label>
+            <input type="text"id="lastName" class="border border-gray-300 p-2 rounded w-full ">
+        </div>
+        <div class="mb-4">
+            <label for="phone" class="block text-green-700">Phone</label>
+            <input type="text"id="phone" class="border border-gray-300 p-2 rounded w-full ">
+        </div>
+        <div class="mb-4">
+            <label for="img"class="block text-green-700">Imagen</label>
+            <input type="text"id="img" class="border border-gray-300 p-2 rounded w-full ">
+        </div>
+
+        <button type="submit" class=" bg-blue-500 px-4 p-2  text-white rounded">Guardar</button>
+    </form>
+    <table class="min-w-Full bg-white shadow-md rounded-md">
+        <thead>
+            <tr>
+                <th class="py-2 px-4 bg-gray-300">Nombre</th>
+                <th class="py-2 px-4 bg-gray-300">Apellido</th>
+                <th class="py-2 px-4 bg-gray-300">Telefono</th>
+                <th class="py-2 px-4 bg-gray-300">Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable">
+            <!--los datos que iran aquí-->
+        </tbody>
+    </table>
+
+    </div>
+</body>
+</html>
